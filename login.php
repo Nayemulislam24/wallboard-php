@@ -2,6 +2,7 @@
 session_start();
 
 ## check logged in adn redirect back
+//    echo $_SESSION['id'];
 if (!empty($_SESSION['id']) && !empty($_SESSION['full_name'])) {
 	header('Location: index.php');
 }
@@ -49,8 +50,10 @@ if (!empty($_SESSION['id']) && !empty($_SESSION['full_name'])) {
 										<h3 class="">Sign In</h3>
 										<strong class="text-danger"><?php echo isset($_SESSION['error']) ? $_SESSION['error'] : ''; ?></strong>
 									</div>
-									
-									<div class="login-separater text-center mb-4" style="margin-top: -13px;"><span>SIGN IN WITH EMAIL</span><hr/></div>
+
+									<div class="login-separater text-center mb-4" style="margin-top: -13px;"><span>SIGN IN WITH EMAIL</span>
+										<hr />
+									</div>
 
 									<div class="form-body">
 										<form class="row g-3" action="actions/login_action.php" method="POST">
@@ -87,8 +90,8 @@ if (!empty($_SESSION['id']) && !empty($_SESSION['full_name'])) {
 			</div>
 		</div>
 	</div>
-	<?php 
-		unset($_SESSION['error']);
+	<?php
+	unset($_SESSION['error']);
 	?>
 	<!--end wrapper-->
 	<!-- Bootstrap JS -->
@@ -100,8 +103,8 @@ if (!empty($_SESSION['id']) && !empty($_SESSION['full_name'])) {
 	<script src="assets/plugins/perfect-scrollbar/js/perfect-scrollbar.js"></script>
 	<!--Password show & hide js -->
 	<script>
-		$(document).ready(function () {
-			$("#show_hide_password a").on('click', function (event) {
+		$(document).ready(function() {
+			$("#show_hide_password a").on('click', function(event) {
 				event.preventDefault();
 				if ($('#show_hide_password input').attr("type") == "text") {
 					$('#show_hide_password input').attr('type', 'password');
@@ -118,4 +121,5 @@ if (!empty($_SESSION['id']) && !empty($_SESSION['full_name'])) {
 	<!--app JS-->
 	<script src="assets/js/app.js"></script>
 </body>
+
 </html>

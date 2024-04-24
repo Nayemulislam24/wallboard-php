@@ -8,7 +8,6 @@
         </div>
         <div class="toggle-icon ms-auto"><i class='bx bx-arrow-to-left'></i></div>
     </div>
-
     <!--navigation-->
     <ul class="metismenu" id="menu">
         <li>
@@ -21,7 +20,7 @@
                 <li><a href="?p=realtime"><i class="bx bx-right-arrow-alt"></i>Realtime</a></li>
             </ul>
         </li>
-
+        <li><a href="?p=crm"><i class="bx bx-right-arrow-alt"></i>CRM</a></li>
         <li class="menu-label">UI Elements</li>
         <li>
             <a href="?p=users">
@@ -29,7 +28,6 @@
                 <div class="menu-title">Users</div>
             </a>
         </li>
-
         <li>
             <a href="?p=uppy">
                 <div class="parent-icon"><i class='bx bx-user-circle'></i></div>

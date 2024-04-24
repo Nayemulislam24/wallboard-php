@@ -1,9 +1,11 @@
-<?php 
+<?php
 include('../libs/db.php');
+
 
 if (isset($_POST['submit'])) {
     $email = $_POST['email'];
-	$password = md5($_POST['password']);
+    $password = $_POST['password'];
+    // $password = md5($_POST['password']);
 
     ## validate requests
     if (isset($email) && !empty($email) && isset($password) && !empty($password)) {
@@ -12,7 +14,7 @@ if (isset($_POST['submit'])) {
         $loginResult = $conn->query("SELECT id, full_name FROM users WHERE email = '{$email}' AND password = '{$password}'");
 
         ## check user found or not
-        if($loginResult->num_rows > 0) {
+        if ($loginResult->num_rows > 0) {
 
             ## fetch user data
             $userData = $loginResult->fetch_array();
@@ -31,4 +33,3 @@ if (isset($_POST['submit'])) {
         }
     }
 }
-?>
