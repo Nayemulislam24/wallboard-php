@@ -5,7 +5,7 @@
     $servername = "localhost";
     $username = "root";
     $password = "";
-    $db = "boilerplate";
+    $db = "asterisk";
 
     $conn = new mysqli($servername, $username, $password, $db);
 
