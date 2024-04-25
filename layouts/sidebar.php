@@ -20,7 +20,14 @@
                 <li><a href="?p=realtime"><i class="bx bx-right-arrow-alt"></i>Realtime</a></li>
             </ul>
         </li>
-        <li><a href="?p=crm"><i class="bx bx-right-arrow-alt"></i>CRM</a></li>
+
+        <li>
+            <a href="?p=crm">
+                <div class="parent-icon"><i class='bx bx-check-square'></i></i></div>
+                <div class="menu-title">CRM</div>
+            </a>
+        </li>
+
         <li class="menu-label">UI Elements</li>
         <li>
             <a href="?p=users">
