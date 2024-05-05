@@ -18,9 +18,12 @@
                             </div>
                         </div>
                         <!-- Centered button column -->
-                        <div class="col-md-12 text-left" style="margin-top: 20px; margin-left: 80px;">
+                        <div class="col-md-12 text-left" style="margin-top: 20px;">
                             <div class="btn-group">
-                                <button type="button" class="btn btn-md btn-primary px-3">	<i class="fadeIn animated bx bx-search-alt-2"></i>Search</button>
+                                <button type="button" class="btn btn-md btn-primary px-3"> <i class="fadeIn animated bx bx-search-alt-2"></i>Search</button>
+                            </div>
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-md btn-primary px-3"><i class="fadeIn animated bx bx-cloud-download"></i>Download</button>
                             </div>
                         </div>
 
